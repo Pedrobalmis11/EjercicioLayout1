@@ -18,7 +18,6 @@
                     Height="419"
                     VerticalAlignment="Top">
 
-
             <StackPanel HorizontalAlignment="Stretch"                     
                         Margin="10"
                         Orientation="Vertical">
