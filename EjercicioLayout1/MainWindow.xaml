@@ -10,15 +10,57 @@
         Width="850"
         Icon="icon.ico"
         MaxWidth="950"
-        MinWidth="400"
-        >
+        MinWidth="400">
+
+    <!--Etilos-->
+    <Window.Resources>
+        <!--Etilo TextBlock-->
+        <Style TargetType="TextBlock">
+
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+            <Setter Property="FontSize"
+                    Value="16" />
+
+            <Setter Property="Margin"
+                    Value="10,0,0,0" />
+
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+        </Style>
+
+        <!--Etilo TextBox-->
+        <Style TargetType="TextBox">
+
+            <Setter Property="Height"
+                    Value="23" />
+
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+
+            <Setter Property="Margin"
+                    Value="10" />
+        </Style>
+
+        <!--Etilo Button-->
+        <Style TargetType="Button">
+
+            <Setter Property="Width"
+                    Value="100" />
+
+            <Setter Property="Margin"
+                    Value="10" />
+
+        </Style>
+    </Window.Resources>
+
     <Grid>
 
         <StackPanel HorizontalAlignment="Stretch"
                     Height="419"
                     VerticalAlignment="Top">
 
-            <StackPanel HorizontalAlignment="Stretch"                     
+            <StackPanel HorizontalAlignment="Stretch"
                         Margin="10"
                         Orientation="Vertical">
                 <StackPanel.Background>
@@ -30,19 +72,13 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
 
-                <TextBlock TextWrapping="Wrap"
-                           Text="Nombre"
-                           FontSize="16"
-                           Margin="10,0,0,0"
-                           FontWeight="Bold" />
+                <TextBlock Text="Nombre" />
 
-                <TextBox Height="23"
-                         TextWrapping="Wrap"
-                         Margin="10" />
+                <TextBox />
+
             </StackPanel>
 
-            <StackPanel 
-                        HorizontalAlignment="Stretch"
+            <StackPanel HorizontalAlignment="Stretch"
                         Margin="10">
 
 
@@ -55,20 +91,13 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
 
-                <TextBlock TextWrapping="Wrap"
-                           Text="Dirección"
-                           FontSize="16"
-                           Margin="10,0,0,0"
-                           FontWeight="Bold" />
+                <TextBlock Text="Dirección" />
 
-                <TextBox Height="23"
-                         TextWrapping="Wrap"
-                         Margin="10" />
+                <TextBox />
 
             </StackPanel>
 
-            <StackPanel 
-                        HorizontalAlignment="Stretch"
+            <StackPanel HorizontalAlignment="Stretch"
                         Margin="10">
 
                 <StackPanel.Background>
@@ -80,17 +109,10 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
 
-                <TextBlock TextWrapping="Wrap"
-                           Text="Correo electrónico"
-                           FontSize="16"
-                           Margin="10,0,0,0"
-                           FontWeight="Bold" />
+                <TextBlock Text="Correo electrónico" />
 
-                <TextBox Height="23"
-                         Width="650"
-                         HorizontalAlignment="Left"
-                         TextWrapping="Wrap"
-                         Margin="10" />
+                <TextBox Width="650"
+                         HorizontalAlignment="Left" />
 
             </StackPanel>
 
@@ -98,13 +120,9 @@
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
 
-                <Button Content="Aceptar"
-                        Width="100"
-                        Margin="10" />
+                <Button Content="Aceptar" />
 
-                <Button Content="Cancelar"
-                        Width="100"
-                        Margin="10" />
+                <Button Content="Cancelar" />
 
             </StackPanel>
 
