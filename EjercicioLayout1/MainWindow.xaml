@@ -52,17 +52,27 @@
                     Value="10" />
 
         </Style>
+
+        <!--Etilo StackPanel-->
+        <Style TargetType="StackPanel"
+               x:Key="StackColres">
+
+            <Setter Property="HorizontalAlignment"
+                    Value="Stretch" />
+
+            <Setter Property="Margin"
+                    Value="10" />
+
+        </Style>
     </Window.Resources>
 
     <Grid>
 
-        <StackPanel HorizontalAlignment="Stretch"
-                    Height="419"
+        <StackPanel Height="419"
                     VerticalAlignment="Top">
 
-            <StackPanel HorizontalAlignment="Stretch"
-                        Margin="10"
-                        Orientation="Vertical">
+            <StackPanel Orientation="Vertical"
+                        Style="{StaticResource StackColres}">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
                                          StartPoint="0.5,0">
@@ -78,8 +88,7 @@
 
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Stretch"
-                        Margin="10">
+            <StackPanel Style="{StaticResource StackColres}">
 
 
                 <StackPanel.Background>
@@ -97,8 +106,7 @@
 
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Stretch"
-                        Margin="10">
+            <StackPanel Style="{StaticResource StackColres}">
 
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
